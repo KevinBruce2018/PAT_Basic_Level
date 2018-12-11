@@ -1,12 +1,11 @@
-# -*- coding: utf-8 -*-
 n = eval(input())
 data = input().split()
 result = []
 for i in data:
     try:
         value = eval(i)
-        #flag = i.find('.')==-1 or (i.find('.')!=-1 and len(i)-i.find('.')-1<=2 and i.find('.')!=0)
-        if value>=-1000 and value <=1000 and len(i)-i.find('.')-1<=2 and i.find('.')!=0:
+        flag = i.find('.')==-1 or (i.find('.')!=-1 and len(i)-i.find('.')-1<=2 and i.find('.')!=0)
+        if value>=-1000 and value <=1000 and flag:
             result.append(value)
         else:
             print('ERROR: '+i+' is not a legal number')  
