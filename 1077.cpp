@@ -2,8 +2,6 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
-    freopen("input.txt","r",stdin);
-    freopen("output.txt","w",stdout);
     int n,max;
     cin>>n>>max;
     for(int i = 0;i < n;i++)
